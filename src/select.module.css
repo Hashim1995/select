@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  width: 20em;
+  border: 0.05em solid #777;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 0.25em;
+  height: 2.5em;
+  outline: none;
+}
+.container:focus {
+  border-color: hsl(200, 100%, 50%);
+}
+
+.searchInput {
+  height: 80%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  padding: 0.25em;
+}
+.searchInput:focus {
+  outline: none;
+}
+.searchInput::placeholder {
+  color: #333;
+  font-size: 14px;
+}
+.placeholder {
+  color: #333;
+  padding: 0.25em;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+}
+.btn-clear {
+  background: none;
+  color: #777;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25em;
+}
+.btn-clear:focus,
+.btn-clear:hover {
+  color: #333;
+}
+.divider {
+  background-color: #777;
+  width: 0.05em;
+  align-self: stretch;
+}
+.caret {
+  border: 0.25em solid transparent;
+  border-top-color: #777;
+  translate: 0 25%;
+  cursor: pointer;
+}
+
+.options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #777;
+  border-radius: 0.25em;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em 0.25em;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: hsl(200, 100%, 70%);
+}
+
+.option.highlighted {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}
+.IsMultiLabelContainer {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  flex-wrap: wrap;
+}
+.IsMultiLabel {
+  font-size: 14px;
+  background-color: #dddddd;
+  border-radius: 0.25em;
+  border: 1px solid #333;
+  padding: 0.15em;
+  cursor: pointer;
+}
