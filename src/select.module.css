@@ -8,11 +8,14 @@
   border-radius: 0.25em;
   height: 2.5em;
   outline: none;
+  padding: 0 0.25em;
 }
 .container:focus {
   border-color: hsl(200, 100%, 50%);
 }
-
+.noData {
+  text-align: center;
+}
 .searchInput {
   height: 80%;
   flex-grow: 1;
